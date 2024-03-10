@@ -1,0 +1,67 @@
+{% extends 'Navbar/usernavbar.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+     <style>
+        .card-container {
+            display: flex; /* Use flexbox layout */
+            flex-wrap: wrap; /* Allow wrapping to the next line if necessary */
+            gap: 20px; /* Add some space between cards */
+        }
+
+        .card {
+            width: 200px; /* Set a fixed width for each card */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+{% block body %}
+<div>
+    <div class="card-container">
+    <div class="card" style="width: 18rem;">
+  <img src="{% static 'images/download.jpg' %}" class="card-img-top" alt="SONG1">
+  <div class="card-body">
+    <h5 class="card-title">Chaleya</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+
+    <div class="card" style="width: 18rem;">
+  <img src="{% static 'images/SONG3.jpg' %}" class="card-img-top" alt="SONG1">
+  <div class="card-body">
+    <h5 class="card-title">life of ram</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+
+    <div class="card" style="width: 18rem;">
+  <img src="{% static 'images/song2.jpg' %}" class="card-img-top" alt="SONG1">
+  <div class="card-body">
+    <h5 class="card-title">Maate Vinadhugaa</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+
+    <div class="card" style="width: 18rem;">
+  <img src="{% static 'images/Song4.jpg' %}" class="card-img-top" alt="SONG1">
+  <div class="card-body">
+    <h5 class="card-title">let me love you</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+{% endblock %}
+</div>
+
+</div>
+</body>
+</html>
